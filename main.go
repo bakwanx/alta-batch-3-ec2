@@ -17,7 +17,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	//
+
 	// personModel can be either personMemModel or personDbModel, depends on the configuration
 	var personModel appModel.PersonModel
 	switch cfg.Storage {

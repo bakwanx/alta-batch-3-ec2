@@ -3,12 +3,12 @@ FROM golang:1.18
 ## We create an /app directory within our
 ## image that will hold our application source
 ## files
-RUN mkdir /app
+RUN mkdir /app2
 
 ## We specify that we now wish to execute 
 ## any further commands inside our /app
 ## directory
-WORKDIR /app
+WORKDIR /app2
 
 COPY go.mod /app
 COPY go.sum /app
