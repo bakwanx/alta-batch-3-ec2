@@ -10,13 +10,13 @@ RUN mkdir /app2
 ## directory
 WORKDIR /app2
 
-COPY go.mod /app
-COPY go.sum /app
+COPY go.mod /app2
+COPY go.sum /app2
 RUN go mod download
 
 ## We copy everything in the root directory
 ## into our /app directory
-ADD . /app
+ADD . /app2
 
 ## we run go build to compile the binary
 ## executable of our Go program
